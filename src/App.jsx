@@ -8,6 +8,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { BsTypeH3 } from 'react-icons/bs'
 import ItemDetail from './component/ItemDetail/ItemDetail'
 import Listall from './component/List/Listall'
+import DataBase from './component/DataBase/DataBase'
 
 
 function App() {
@@ -54,7 +55,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" 
-          element={<h3>Bien venidos  a DrinksStation... Click en Productos </h3>} />
+          element={<DataBase/>} />
           <Route path="/Productos/Mojito"  element={<List data={mojito} />} />
           <Route path="/Productos/Mojito/:name"  element={<ItemDetail data={mojito} />} />
           <Route path="/Productos/Negroni"  element={<List data={negroni} />} />

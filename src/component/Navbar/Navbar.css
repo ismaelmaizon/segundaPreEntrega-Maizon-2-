@@ -77,6 +77,11 @@
 .menu_dentro{
     padding: 10px;
     font-size: 15px;
+    color: antiquewhite;
+
+}
+.menu_dentro:hover {
+    background-color: #FC9802;
 }
 
 
@@ -97,6 +102,8 @@
     font-size: 30px;
 }
 
-.link{
+.links{
     text-decoration: none;
+    color: antiquewhite;
 }
+
