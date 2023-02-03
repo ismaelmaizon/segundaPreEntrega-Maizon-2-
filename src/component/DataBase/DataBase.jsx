@@ -11,6 +11,7 @@ const DataBase = () => {
     const getItems = async () => {
         const querySnapshot = await getDocs(itemsCollectionRef);
         console.log(querySnapshot);
+        // setItems(querySnapshot.docChanges.map((doc) => ({...doc.data(), id: doc.id})));
         const docs = querySnapshot.docs.map((doc) => doc.data());
         console.log(docs);
         setItems(docs);
@@ -22,7 +23,7 @@ const DataBase = () => {
 
     return (
         items.map((item) => {
-            console.log(item.name);
+            // console.log(item.name);
             return (
                 <div>
                     <h1>{item.name} </h1>
